@@ -1,0 +1,343 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: #efefef;
+}
+
+header {
+  padding: 3px 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  background-color: black;
+  text-align: center;
+}
+
+.header-con-imagen {
+  background-image: url(/img/menu.PNG);
+  background-size: cover; /* Para que la imagen cubra todo el espacio */
+}
+
+.header-top {
+  display: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/*Menu de navegacion*/
+.search-bar input {
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  width: 800px; /* Ajusta el ancho de la barra de búsqueda */
+  padding: 10px;
+  font-size: 16px;
+  border: 5px solid #000000;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.search-bar:hover {
+  box-shadow: 3rem 3rem white;
+}
+
+.menu-bar {
+  border: 5px solid #cfcfcf;
+  width: 2000px;
+  background-color: #dfd9d9;
+  text-align: center;
+  padding: 5px 0;
+}
+.menu-bar ul {
+  list-style-type: none;
+  margin: 7px;
+  padding: 0;
+}
+
+.menu-bar ul,
+.menu-bar a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+.menu-bar ul a:hover {
+  box-shadow: 0.1rem 0.3rem rgb(161, 159, 159);
+  background-color: #c0c0c0;
+  border-radius: 4px;
+}
+
+/*seccion de los productos*/
+
+main h1,
+p {
+  text-align: center;
+}
+/*Caja de los productos*/
+.caja {
+  border: 1px solid #ddd; /* Borde de los productos */
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center; /* Centra el texto */
+  background-color: rgb(230, 227, 227);
+  transition: box-shadow 0.3s ease;
+  flex-basis: calc(33.33% - 20px);
+  box-sizing: border-box;
+  flex-direction: row;
+}
+
+.caja:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 8px black;
+}
+.caja img {
+  max-width: 150px; /* Reduce el tamaño de la imagen */
+  height: auto;
+  border-radius: 5px;
+}
+
+.flex-conteiner {
+  display: flex;
+  background-color: #fcfcfccc;
+  padding: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.flex-conteiner:hover {
+  box-shadow: 0 4px 8px black;
+}
+
+/*Boton para comprar*/
+.caja button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.caja button:hover {
+  background-color: #218838; /* Cambia el color en hover */
+}
+
+.new-sletter {
+  text-align: center;
+  border: 5px solid #cfcfcf;
+  background-color: #c0c0c0; /* Color de fondo */
+  color: black;
+  padding: 40px;
+}
+
+.new-sletter h1,
+h2 {
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.new-sletter input {
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  width: 800px; /* Ajusta el ancho de la barra de búsqueda */
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  text-align: left;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/*footer*/
+footer {
+  text-align: center;
+  background-color: #000; /* Color de fondo negro */
+  color: white; /* Color del texto en blanco */
+  padding: 40px;
+}
+
+.footer {
+  list-style-type: none;
+  padding: 40px;
+}
+
+.footer-links ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.footer-links ul li a {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #f1c40f; /* Color amarillo en hover */
+}
+
+.footer-bottom p {
+  text-align: left;
+  margin: 0;
+}
+
+footer .Instagram {
+  float: right;
+  padding: 1rem;
+}
+
+footer .WhatsApp {
+  padding: 1rem;
+  float: right;
+}
+
+.servicios {
+  font-size: 1.8em;
+  text-decoration: underline;
+}
+
+/*FORMULARIO-SECCION CONTACTO*/
+.contact-info {
+  font-size: 1.2em;
+  padding: 5px 5px;
+  border: 3px;
+  justify-content: left;
+  text-align: center;
+  justify-content: left;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between; /* Separa la columna izquierda y el formulario */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.contact-info {
+  cursor: pointer;
+}
+
+.form-container {
+  text-align: center;
+  width: 60%; /* Ancho del formulario */
+  display: flex;
+  justify-content: left; /* Centra el formulario horizontalmente */
+}
+
+form {
+  width: 100%;
+  max-width: 400px; /* Ancho máximo del formulario */
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/*TABLA DETALLES*/
+
+.contact-info p {
+  border: 1px solid #ddd; /* Borde de los productos */
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center; /* Centra el texto */
+  background-color: rgb(230, 227, 227);
+  transition: box-shadow 0.3s ease;
+  flex-basis: calc(33.33% - 20px);
+  box-sizing: border-box;
+}
+
+.form-container img {
+  border: 3px solid black;
+  border-radius: 5px;
+}
+
+/*FAQS-PREGUNRAS FRECUENTES*/
+.content {
+  padding: 20px;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #007bff; /* Subrayado en azul */
+}
+
+.item-list {
+  list-style-type: none; /* Quita los puntos de la lista */
+  padding: 0;
+}
+
+.item-list li,
+.item-list strong {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 5px 0;
+  padding: 10px;
+}
+
+.faq-section {
+  margin-top: 20px;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+}
+
+.faq-question {
+  font-size: 18px;
+  margin: 0;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ddd; /* Línea divisoria debajo de la pregunta */
+}
+
+.faq-answer {
+  margin: 0;
+  padding: 10px 0;
+}
